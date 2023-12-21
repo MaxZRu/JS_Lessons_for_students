@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* комментарий */
+
+      #list_ol {
+        color: red;
+        font-size: xx-large;
+      }
+      /* Через пробел все элементы внутри */
+      #list_ol span {
+        color: green;
+      }
+
+      /* Непосредственно вложенный в list_ol */
+      #list_ol > span {
+        color: blue;
+      }
+
+      /* Вложенный в span и еще в strong */
+      #list_ol span > strong {
+        color: yellow;
+      }
+      /* strong идет после <b> на этом же уровне */
+      #list_ol b ~ strong {
+        color: blueviolet;
+      }
+
+      #list_ol [selected] {
+        background-color: grey;
+      }
+
+      #list_ul {
+        font-size: xx-large;
+      }
+
+      /* все четные */
+      #list_ul>li:nth-child(even) {
+        background-color: grey;
+      }
+      
+      /* первый в списке */
+      #list_ul>li:first-child {
+        color: red;
+      }
+
+      .img_caption {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border: 5px solid black;
+      }
+      .img_caption img{
+        height:100%;
+        width: 100%;
+        object-fit: scale-down;
+        /* object-fit: cover; */
+        background-color: gray;
+        margin: auto;
+        display: block;
+      }
+
+      .img_caption img:hover {
+        transform: scale(1.2);
+      }
+
+      .img_caption span {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.7);
+        
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Комментарий в HTML тексте
+    -->
+    <ol id="list_ol">
+      <span>Внутри OL списка просто текст</span>
+      <li>
+        Первый <span>фрагмент <b>Привет </b><strong>текста</strong></span>
+      </li>
+      <li><u>Второй</u> <span>фрагмент текста</span></li>
+      <li>
+        <strong>Третий</strong> <span>фрагмент <strong>текста</strong></span>
+      </li>
+      <li selected>Четвертый <span>фрагмент текста</span></li>
+    </ol>
+
+    <ul id="list_ul">
+      <li>Первый</li>
+      <li>Второй</li>
+      <li>Третий</li>
+      <li>Четвертый</li>
+    </ul>
+
+
+    <div class="img_caption">
+        <img src="https://on-desktop.com/wps/2017Animals___Cats_Little_kitten_of_ash_color_in_the_basket_113409_.jpg">
+        <span>подпись к картинке</span>
+    </div>
+    <div class="img_caption">
+        <img src="https://dtchbgs4aqydg.cloudfront.net/food/06d551cd-b102-4209-a77c-ad8ebdb924c8_original.jpg">
+        <span>подпись к картинке</span>
+    </div>
+    <div class="img_caption">
+        <img src="https://on-desktop.com/wps/2017Animals___Cats_Little_kitten_of_ash_color_in_the_basket_113409_.jpg">
+        <span>подпись к картинке</span>
+    </div>
+  </body>
+</html>
