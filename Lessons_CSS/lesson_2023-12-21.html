@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .list_ol li {
+        border: 1px solid;
+    }
+
+    .list_ol span {
+        color: red;
+    }
+
+    .list_ol li:first-child {
+        background-color: green;
+    }
+
+    .list_ol li:nth-child(4) {
+        background-color: yellow;
+    }
+
+    .list_ol li:nth-child(4) span {
+        color: blue;
+    }
+
+    .list_ol li span+span {
+        color: green;
+    }
+
+    .list_ol li:nth-child(even) {
+        border: 1px solid red;
+        background-color: blanchedalmond;
+    }
+
+    .list_ol li:nth-child(odd) {
+        border: 1px solid green;
+        background-color: rgb(38, 164, 46);
+    }
+
+
+
+
+
+    .img_text{
+        width: 200px;
+        height: 200px;
+        border: 3px solid black;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .img_text img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;        
+        transition: all 1s;
+    }
+
+    .img_text img:hover {
+        transform: scale(1.5);
+        transition: all 1s;
+    }
+
+    .img_text span {
+        position: relative;
+        top:-40px;
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        background-color: rgba(255, 255,255, 0.9);
+        text-align: center;
+        
+    }
+</style>
+
+<body>
+    <div class="img_text">
+        <img src="http://s1.1zoom.ru/big0/785/Cats_Kittens_Glance_526956_1280x914.jpg">
+        <span>Милый котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i.pinimg.com/736x/74/5b/ed/745bedcf39728da9de205796ddcef219.jpg">
+        <span>Другой милый котик</span>
+    </div>
+    
+    <div class="img_text">
+        <img src="http://s1.1zoom.ru/big0/785/Cats_Kittens_Glance_526956_1280x914.jpg">
+        <span>Милый котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i.pinimg.com/736x/74/5b/ed/745bedcf39728da9de205796ddcef219.jpg">
+        <span>Другой милый котик</span>
+    </div>
+    <div class="img_text">
+        <img src="http://s1.1zoom.ru/big0/785/Cats_Kittens_Glance_526956_1280x914.jpg">
+        <span>Милый котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i.pinimg.com/736x/74/5b/ed/745bedcf39728da9de205796ddcef219.jpg">
+        <span>Другой милый котик</span>
+    </div>
+    <div class="img_text">
+        <img src="http://s1.1zoom.ru/big0/785/Cats_Kittens_Glance_526956_1280x914.jpg">
+        <span>Милый котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i.pinimg.com/736x/74/5b/ed/745bedcf39728da9de205796ddcef219.jpg">
+        <span>Другой милый котик</span>
+    </div>
+    <div class="img_text">
+        <img src="http://s1.1zoom.ru/big0/785/Cats_Kittens_Glance_526956_1280x914.jpg">
+        <span>Милый котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i.pinimg.com/736x/74/5b/ed/745bedcf39728da9de205796ddcef219.jpg">
+        <span>Другой милый котик</span>
+    </div>
+    <div class="img_text">
+        <img src="http://s1.1zoom.ru/big0/785/Cats_Kittens_Glance_526956_1280x914.jpg">
+        <span>Милый котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i.pinimg.com/736x/74/5b/ed/745bedcf39728da9de205796ddcef219.jpg">
+        <span>Другой милый котик</span>
+    </div>
+ 
+
+
+
+    <ol class="list_ol">
+        <li>Первый <span>текст</span></li>
+        <li>Второй <span>текст</span></li>
+        <li>Третий <span>текст</span> и <span>текст №2</span></li>
+        <li>Четвертый <span>текст</span></li>
+        <li>Пятый <span>текст</span></li>
+    </ol>
+
+</body>
+
+</html>
