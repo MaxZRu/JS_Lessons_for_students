@@ -77,14 +77,19 @@
     @media screen and (width>600px){
         .box {
             background-color: red;
-            content: ("больше 600px");
         }        
+        .box::after {
+          content: "600px";
+        }
     }
 
     @media screen and (width<600px){
         .box {
             background-color: green;
         }        
+        .box::after {
+          content: "меньше 600px";
+        }
     }
 
 </style>
@@ -105,6 +110,40 @@
   height="200"
   src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
 </iframe>  
+<style>
+.div_text {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.div_text:hover div{
+  left: 200px;
+  transition: 1s all;
+
+}
+.div_2 {
+  background-color: rgba(255,0,0,0.5);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transition: 1s all;
+
+}
+
+</style>
+
+
+<div class="div_text">Текст внутри блока
+  <div class="div_2"></div>
+
+
+</div>
+
   </body>
 
 </html>
