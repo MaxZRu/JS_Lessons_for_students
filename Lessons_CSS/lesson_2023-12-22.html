@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list_ol li {
+            border: 1px solid;
+        }
+
+        .list_ol span {
+            color: red;
+        }
+
+        .list_ol li:first-child {
+            background-color: green;
+        }
+
+        .list_ol li:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .list_ol li:nth-child(3) span {
+            color: blue;
+        }
+
+        .list_ol li:nth-child(1) span~span {
+            color: blue;
+        }
+
+        .list_ol li:nth-child(even) {
+            background-color: gray;
+        }
+
+        .list_ol li:nth-child(odd) {
+            background-color: #CCCCCC;
+        }
+
+        .img_text {
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            background-color: gray;
+            
+        }
+        .img_text img {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;               
+            transition: all 1s;
+            filter: grayscale(1);            
+        }
+        .img_text img:hover {
+            transform: scale(1.5) rotate(360deg);
+            transition: all 1s;
+            filter: grayscale(0);            
+        }
+        .img_text span {
+           position: absolute;  
+           bottom: 0px;
+           left: 0px;
+           background-color: rgba(255,255,255,0.5);
+           width: 100%;
+           display: inline-block;
+           text-align: center;
+           height: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+    <div class="img_text">
+        <img src="https://w.forfun.com/fetch/17/1730c1b37b851a0fff659cc20eeb9dda.jpeg">
+        <span>Милые котики</span>
+    </div>
+
+    <div class="img_text">
+        <img src="https://i5.imageban.ru/out/2023/02/21/2f330b8b4659af011587e5acddd8c1ed.jpg">
+        <span>Высокий котик</span>
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <ol class="list_ol">
+        <li>Первый <span>Текст</span><span> Другой текст</span></li>
+        <li>Второй <span>Текст</span></li>
+        <li>Третий <span>Текст</span></li>
+        <li>Четвертый <span>Текст</span></li>
+        <li>Пятый <span>Текст</span></li>
+    </ol>
+</body>
+
+
+<div style="width: 300px; height: 300px; border: 1px solid; 
+overflow: hidden;
+"> 
+    Дорогие друзья, повышение уровня гражданского сознания в значительной степени обуславливает создание дальнейших направлений развития проекта? Разнообразный и богатый опыт постоянное информационно-техническое обеспечение нашей деятельности обеспечивает актуальность новых предложений. Равным образом новая модель организационной деятельности обеспечивает актуальность модели развития.
+
+    Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации направлений прогрессивного развития!
+    
+    Практический опыт показывает, что рамки и место обучения кадров в значительной степени обуславливает создание существующих финансовых и административных условий? Соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки соответствующих условий активизации. Дорогие друзья, выбранный нами инновационный путь в значительной степени обуславливает создание дальнейших направлений развитая системы массового участия.
+    
+    Значимость этих проблем настолько очевидна, что повышение уровня гражданского сознания играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт новая модель организационной деятельности обеспечивает актуальность модели развития. С другой стороны курс на социально-ориентированный национальный проект требует от нас системного анализа системы масштабного изменения ряда параметров? Разнообразный и богатый опыт сложившаяся структура организации напрямую зависит от экономической целесообразности принимаемых решений! Задача организации, в особенности же постоянное информационно-техническое обеспечение нашей деятельности требует от нас анализа дальнейших направлений развитая системы массового участия. Практический опыт показывает, что...
+
+</div>
+
+</html>
