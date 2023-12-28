@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+           font-size:0.5em; 
+        }
+        
+
+        @media screen and (width<1500px){
+            #menu {
+                background-color: green;
+                width: 50vw;
+            }
+            .box {
+                width: 32%;
+                height: 200px;
+                border: 1px solid;
+                background-color: green;
+                display: inline-block;
+            }
+
+        }
+
+        @media screen and (width<1000px){
+            #menu {
+                background-color: yellow;
+                width: 30vw;
+            }
+            .box {
+                width: 48%;
+                height: 200px;
+                border: 1px solid;
+                background-color: yellow;
+                display: inline-block;
+            }
+
+        }
+
+
+        @media screen and (width<500px){
+            #menu {
+                background-color: red;
+                width: 50px;
+            }
+
+            .box {
+                width: 100%;
+                height: 200px;
+                border: 1px solid;
+                background-color: red;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <style>
+        .div_text {
+          width: 200px;
+          height: 100px;
+          border: 1px solid;
+          position: relative;
+           overflow: hidden; 
+        }
+        
+        .div_text:hover div{
+          left: 250px;
+          transition: 1s all;
+          transform: rotate(45deg);
+        
+        }
+        .div_2 {
+          background-color: rgba(255,0,0,0.5);
+          width: 200px;
+          height: 100px;
+          position: absolute;
+          top:0px;
+          left: 0px;
+          transition: 1s all;
+        
+        }
+        
+        </style>
+  
+<div class="div_text">Текст внутри блока
+    <div class="div_2"></div>
+   </div>
+
+
+
+    <div><button id="menu">Кнопка Меню</button></div>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+
+
+    <p>Текст без оформления Разный текст тут ... 234234234 2</p>
+    <p class="text">Разный текст тут ... 234234234 2</p>
+
+
+    <span style="font-size: 2rem; color:red">2rem 
+        <span style="font-size: 2rem; color:green">2rem </span>
+
+        <span style="font-size: 1rem; color:blue">1rem </span>
+    </span>
+    <br>
+    <span style="font-size: 20vh;">20vh</span>
+    
+    
+    <br>
+    <a id="Оглавление" />Оглавление
+    <ul>
+        <li><a href="#Main">Главное</a></li>
+        <li><a href="#Введение">Введение</a></li>
+    </ul>
+
+    <p><a id="Main" />Главное </p>
+    <a href="#Оглавление">Перейти на Оглавление</a>
+    <p>
+     .. ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл
+        ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл
+
+    </p>
+
+    <p><a id="Введение" />Введение</p>
+    <a href="#Оглавление">Перейти на Оглавление</a>
+    <p></p>
+     .. ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл
+        ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл ывадшыво адвыо адывоадлывда олдыв аодлвыоа ывлдао влдыалдвоылдаовдылоалдывоалдоывлда одывлаолдвыоалдвоыдл
+
+    </p>
+
+
+    
+</body>
+</html>
