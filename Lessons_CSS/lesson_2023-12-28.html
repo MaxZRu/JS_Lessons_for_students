@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=cyrillic&#038;ver=6.4.2' media='all' />
+
+    <style>
+
+        @media screen and (width<768px) {
+            .product {
+                width: 98vw;
+            }
+        }
+
+        @media screen and (width>768px) {
+            .product {
+                width: 47vw;
+            }
+        }
+
+
+        @media screen and (width>1200px) {
+            .product {
+                width: 31vw;
+            }
+        }
+
+        .product {
+            border: 2px solid #54595F;
+            border-radius: 10px;
+            text-align: center;
+            font-family: "Roboto", Sans-serif;
+            padding-top: 10px ;
+            padding-bottom: 10px ;
+            transition: all 1s;
+            display: inline-block;
+        }
+
+        .product:hover {
+            border: 2px solid #fcb900;
+            transition: all 1s;
+        }
+        .product span {
+            background-color: #6EC1E4;
+            padding: 12px 24px 12px 24px;
+            display: inline-block;
+            color: #ffffff;
+            border-radius: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .product span:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+        .product>div~div {
+            color: #0014D2;
+            font-size: 20px;
+            font-weight: 600;            
+        }
+        .product>div {
+            color: #535F71;
+            font-family: "Roboto", Sans-serif;
+            font-weight: 600;            
+        }
+
+        .product>img {
+            object-fit: contain;
+            max-width: 100%;
+
+        }
+
+        .product>img:hover {
+            animation-name: img_anim;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes img_anim {
+            from {
+                transform: translateY(-10px);
+            }
+            to {
+                transform: translateY(10px);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="product">
+        <img src="https://znatok.ru/wp-content/uploads/2022/10/Joystick-300x219.png" />
+        <div>Пульт Д/У для вездехода «Лидер 4х4»</div>
+        <div>2 023 ₽</div>
+        <span>В корзину</span>
+    </div>
+    <div class="product">
+        <img src="https://znatok.ru/wp-content/uploads/2022/10/Joystick-300x219.png" />
+        <div>Пульт Д/У для вездехода «Лидер 4х4»</div>
+        <div>2 023 ₽</div>
+        <span>В корзину</span>
+    </div>
+    <div class="product">
+        <img src="https://znatok.ru/wp-content/uploads/2022/10/Joystick-300x219.png" />
+        <div>Пульт Д/У для вездехода «Лидер 4х4»</div>
+        <div>2 023 ₽</div>
+        <span>В корзину</span>
+    </div>
+
+    
+</body>
+</html>
