@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт Знаток</title>
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=cyrillic&#038;ver=6.4.2"
+      media="all"
+    />
+    <style>
+      .product {
+        border: 2px solid;
+        border-radius: 5px;
+        display: inline-block;
+        width: 50vw;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 1s;
+        margin: 10px;
+
+      }
+
+      .product:hover {
+        border: 2px solid #fcb900;
+        transition: all 1s;
+      }
+      .product img {
+        max-height: 200px;
+        object-fit: contain;
+        height: auto;
+        max-width: 100%;
+      }
+      .product img:hover {
+        transition: all 1s;
+        animation-name: img_anim;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes img_anim {
+        from {
+          transform: translateY(-10px);
+        }
+        to {
+          transform: translateY(10px);
+        }
+      }
+      .product > div {
+        color: #54595f;
+        font-family: "Roboto", Sans-serif;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      .product > div ~ div {
+        font-family: "Roboto", Sans-serif;
+        text-align: center;
+        color: #0014d2;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .product>span {
+        display: inline-block;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 500;
+        background-color: #6EC1E4;
+        line-height: 1;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        font-weight: 500;
+        transition: all 0.3s;
+        padding: 12px 24px 12px 24px;
+
+      }
+
+      .product>span:hover {
+
+        transform: scale(1.1);
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="goods">
+      <div class="product">
+        <img src="https://znatok.ru/wp-content/uploads/2022/10/Joystick-300x219.png" />
+        <div>Пульт Д/У для вездехода «Лидер 4х4»</div>
+        <div>2023 P</div>
+        <span class="elementor-button-text">В корзину</span>
+        
+      </div>
+      <div class="product">
+        <img src="https://znatok.ru/wp-content/uploads/2022/06/Montazhnaya-plata-300x208.jpg" />
+        <div>Монтажная плата большая для Arduino 7х10 креплений</div>
+        <div>390 P</div>
+        <span class="elementor-button-text">В корзину</span>
+      </div>
+    </div>
+  </body>
+  <script>
+
+/*    
+    goods = [];
+    product = {
+      img: "https://znatok.ru/wp-content/uploads/2022/10/Joystick-300x219.png",
+      text: "Пульт Д/У для вездехода «Лидер 4х4»",
+      cost: 2023,
+    };
+    goods.push(product);
+
+    product = {
+      img: "https://znatok.ru/wp-content/uploads/2022/06/Montazhnaya-plata-300x208.jpg",
+      text: "Монтажная плата большая для Arduino 7х10 креплений",
+      cost: 390,
+    };
+    goods.push(product);
+
+    list_goods = document.querySelector("#goods");
+
+    goods.forEach((product) => {
+      let cell = document.createElement("div");
+      cell.classList.add("product");
+
+      let img = document.createElement("img");
+      img.src = product.img;
+      cell.appendChild(img);
+
+      let div_text = document.createElement("div");
+      div_text.innerText = product.text;
+      cell.appendChild(div_text);
+
+      let div_cost = document.createElement("div");
+      div_cost.innerText = product.cost + " P";
+      cell.appendChild(div_cost);
+
+      list_goods.appendChild(cell);
+    });
+*/    
+  </script>
+</html>
